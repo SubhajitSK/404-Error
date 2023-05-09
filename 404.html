@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page Not Found</title>
+    <style>
+        body {
+            background-color: #00010b;
+            font-family: Arial, sans-serif;
+            color: #dbdbdb;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #ffffff;
+        }
+
+        img {
+            width: 160px;
+            height: 160px;
+            animation: upDownAnimation 2s infinite;
+        }
+
+        @keyframes upDownAnimation {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-5px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        button {
+            background-color: #0043de;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            margin-bottom: 50px;
+            transition: all 0.25s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #002ac3;
+            transform: scale(1.04);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            img {
+                width: 120px;
+                height: 120px;
+            }
+
+            button {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            img {
+                width: 80px;
+                height: 80px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            button {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./assets/crying.png" alt="Crying Cartoon Logo">
+    <h1>Error 404 - Page Not Found</h1>
+    <p>Oops!! The page you are looking for does not exist. How you got here is a mystery. But you can click the button
+        below to go back to the homepage.</p>
+    <button onclick="goBack()">Back to Homepage</button>
+    <script type="text/javascript">
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>
